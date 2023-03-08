@@ -3,10 +3,10 @@ package main
 import (
 	"database/sql"
 	"log"
-	"spiri-llc/autodb/autoslice"
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/spiri-llc/autodb/autoslice"
 )
 
 func main() {

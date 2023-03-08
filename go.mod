@@ -1,4 +1,4 @@
-module spiri-llc/autodb
+module github.com/spiri-llc/autodb
 
 go 1.19
 
