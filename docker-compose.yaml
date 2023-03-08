@@ -1,0 +1,16 @@
+version: '3'
+services:   
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'test'
+      MYSQL_USER: 'test'
+      MYSQL_PASSWORD: 'test'
+      MYSQL_ROOT_PASSWORD: 'test'
+    volumes: 
+      - type: bind
+        source: ./mysql_create_tables.sql
+        target: /docker-entrypoint-initdb.d/mysql_create_tables.sql
+    ports:
+      - 3306:3306
